@@ -9,9 +9,9 @@ CREATE TABLE products(
 -- Creates a numeric column called "item_id" which will automatically increment its default value as we create new rows --
 item_id INTEGER(11) AUTO_INCREMENT NOT NULL,
 --Makes a string column called "product_name" which cannot contain null--
-product_name VARCHAR(30) NOT NULL,
+product_name VARCHAR(255) NOT NULL,
 --Makes a string column called "department_name"--
-department_name VARCHAR(30) NOT NULL,
+department_name VARCHAR(255) NOT NULL,
 --Makes a numeric column called price--
 price INTEGER(10),
 --Makes a numeric column called stock_quantity--
@@ -30,26 +30,22 @@ INSERT INTO into products(item_id, product_name, department_name, price, stock_q
 VALUES(3,"Apple iMac", "Computers", 1349.99, 225);
 
 INSERT INTO into products(item_id, product_name, department_name, price, stock_quantity)
-VALUES(4,"Ba", "Furniture", 69.99, 65);
+VALUES(4,"Marvel Black Panther 6-inch Shuri", "Toys", 24.99, 7);
 
 INSERT INTO into products(item_id, product_name, department_name, price, stock_quantity)
-VALUES(5,"Bar Stools", "Furniture", 69.99, 65);
+VALUES(5,"Poseidon Sport 4.0 Entry Level Road Bike Blk/Sil - ", "Sports and Outdoors", 349.99, 34);
 
 INSERT INTO into products(item_id, product_name, department_name, price, stock_quantity)
-VALUES(6,"Bar Stools", "Furniture", 69.99, 65);
+VALUES(6,"Samsung Electronics UN32M5300A 32-Inch 1080p Smart LED TV", "Electronics", 199.99, 2);
 
 INSERT INTO into products(item_id, product_name, department_name, price, stock_quantity)
-VALUES(7,"Bar Stools", "Furniture", 69.99, 65);
+VALUES(7,"Samsung Galaxy S8 Unlocked 64GB - US Version (Midnight Black)", "Cell Phones and Acessories", 699.99, 1000);
 
 INSERT INTO into products(item_id, product_name, department_name, price, stock_quantity)
-VALUES(8,"Bar Stools", "Furniture", 69.99, 65);
+VALUES(8,"Benchmark Bouquets Signature Roses and Alstroemeria, With Vase", "Grocery and Gourmet Foods", 41.44, 38);
 
 INSERT INTO into products(item_id, product_name, department_name, price, stock_quantity)
-VALUES(9,"Bar Stools", "Furniture", 69.99, 65);
+VALUES(9,"Samsung Gear VR w/Controller - US Version ", "Cell Phones and Acessories", 66.99, 2);
 
 INSERT INTO into products(item_id, product_name, department_name, price, stock_quantity)
-VALUES(10,"Bar Stools", "Furniture", 69.99, 65);
-
-
-
-)
+VALUES(10,"Dorel Living 3-Piece Devyn Faux Marble Pub Dining Set", "Furniture", 104.99, 25);
